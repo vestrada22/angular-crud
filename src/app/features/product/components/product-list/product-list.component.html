@@ -1,0 +1,20 @@
+<div class="product-list">
+  <button mat-raised-button color="primary" routerLink="/products/new">
+    Add Product
+  </button>
+  @for(product of products; track product.id) {
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ product.name }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="product.imageUrl | image" />
+    <mat-card-content>
+      <p>{{ product.description }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button [routerLink]="['/', product.id]">View</button>
+      <button mat-button [routerLink]="['/', product.id, 'edit']">Edit</button>
+    </mat-card-actions>
+  </mat-card>
+  }
+</div>

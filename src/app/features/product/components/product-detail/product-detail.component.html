@@ -1,0 +1,12 @@
+<div @if(product)>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ product?.name }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="product?.imageUrl">
+      <mat-card-content>
+        <p>{{ product?.description }}</p>
+        <p>Price: {{ product?.price }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
