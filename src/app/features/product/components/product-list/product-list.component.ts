@@ -5,7 +5,7 @@ import { ProductService } from '../../services/product.service';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { ImagePipe as Image } from '../../../../shared/pipes/image.pipe';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     Image,
     RouterModule,
+    RouterLink,
     MatCardModule, 
     MatButtonModule],
   templateUrl: './product-list.component.html',

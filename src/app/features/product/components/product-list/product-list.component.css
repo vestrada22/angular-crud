@@ -2,3 +2,21 @@
     margin-top: 10px;
     margin-left: 5px;
 }
+
+.add-button {
+    display: flex;
+    justify-content: end;
+}
+
+.card {
+    max-width: 400px;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card mat-card-actions {
+    justify-content: space-around;
+}
